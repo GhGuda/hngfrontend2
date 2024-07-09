@@ -1,0 +1,38 @@
+.nop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 50vh;
+}
+
+.nop p{
+    font-size: 3rem;
+}
+
+
+.nop h4{
+    padding: 1rem;
+    background-color: var(--btn-color);
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    border-radius: 2rem;
+    transition: .4s ease;
+}
+
+.nop h4:hover{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+@media (max-width:750px){
+    .nop p{
+        font-size: 100%;
+    }
+
+    
+}

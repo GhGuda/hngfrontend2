@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.nav_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.signinsec{
+    background: var(--text-color);
+    color: var(--white-color);
+    display: flex;
+    gap: 10rem;
+    justify-content: flex-end;
+    padding: .6rem 2rem;
+    padding-right: 15.8%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+
+.signinsec1{
+    width: 470px;
+}
+
+.hum{
+    display: none;
+}
+
+.icons{
+    width: 144px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.icons img{
+    width: 24px;
+    height: 24px;
+    opacity: 50%;
+}
+
+.icons .one, .icons .two{
+    filter: invert(1) brightness(2);
+}
+
+
+.icons .one{
+    position: relative;
+}
+
+.icons span{
+    width: auto;
+    padding: .2rem;
+    height: 10px;
+    position: absolute;
+    background: var(--red-color);
+    color: var(--white-color);
+    font-size: 8px;
+    border-radius: 50%;
+    left: 65%;
+    top: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10rem;
+    height: 132px;
+    align-items: center;
+    padding: 1.2rem 0;
+}
+
+nav p{
+    color: var(--btn-color);
+    font-family: "Lexend", sans-serif;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav ul li{
+    font-size: 20px;
+    transition: .4s ease;
+    color: var(--text-color);
+    opacity: 60%;
+}
+
+nav ul li:hover{
+    color: var(--btn-color);
+    cursor: pointer;
+}
+
+.gaga{
+    display: none;
+}
+
+
+
+
+@media (max-width:1800px){
+    .signinsec{
+        gap: 1rem;
+        justify-content: flex-start;
+        padding: .6rem 2rem;
+        padding-right: 0%;
+    }
+
+
+    .signinsec1{
+        width: 100%;
+        padding: 0 1rem;
+        justify-content: space-between;
+    }
+
+
+    .icons{
+        width: fit-content;
+        padding: 0 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    nav{
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+
+    nav p{
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    nav ul li{
+        font-size: 10px;
+        transition: .4s ease;
+        color: var(--text-color);
+        opacity: 60%;
+    }
+}
+
+
+
+
+
+@media (max-width:900px){
+    .signinsec{
+        gap: 1rem;
+        justify-content: flex-start;
+        padding: .6rem 2rem;
+        padding-right: 0%;
+        z-index: 1000;
+    }
+
+    .signinsec1{
+        width: 100%;
+        padding-left: 0rem;
+    }
+
+    .signinsec1 i{
+        font-size: 8px;
+        font-weight: 600;
+    }
+    
+    
+    .icons{
+        width: fit-content;
+        padding: 0 1rem;
+    }
+    
+    
+    .icons img{
+        width: 10px;
+        height: 10px;
+        opacity: 50%;
+    }
+
+    .hum{
+        display: initial;
+        float: right;
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+
+    nav{
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+
+    nav p{
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+        justify-content: center;
+        width: 272px;
+        height: auto;
+        padding: 24px 15px;
+        background: var(--white-color);
+        position: absolute;
+        top: 6.5%;
+        right: 5%;
+        box-shadow: 0 0 1.2rem .1rem ;
+        text-align: start;
+        z-index: 100;
+        border-radius: .5rem;
+        padding-top: 4rem;
+        transition: .4s ease-in-out;
+
+    }
+
+    nav ul img{
+        width: 30px;
+        height: 30px;
+        right: 0;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+    }
+
+    .gaga{
+        display: flex;
+    }
+
+
+    nav ul li{
+        font-size: 100%;
+        font-weight: 400;
+        opacity: 100%;
+        color: var(--text-color);
+        transition: .4s ease-in-out;
+    }
+}

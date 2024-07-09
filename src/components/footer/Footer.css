@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 384px;
+    background: var(--text-color);
+    color: var(--white-color);
+    gap: 4rem;
+    padding: 4rem 21rem;
+}
+
+.logo_side{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 407px;
+}
+
+
+.logo_side h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--white-color);
+    font-family: "Lexend", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.logo_side p{
+    opacity: 50%;
+    font-weight: 100;
+}
+
+
+.intouch{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.intouch .loc{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.intouch .loc img{
+    width: 24px;
+    filter: invert(1);
+    opacity: 50%;
+    height: 24px;
+}
+
+
+.intouch .location  p{
+    font-size: 18px;
+}
+
+.cont{
+    display: flex;
+    gap: 2rem;
+    width: 519px;
+    margin-top: 1rem;
+}
+
+.cont .company{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: 100;
+}
+
+.cont .company h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cont .company ul{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: var(--white-color);
+    opacity: 50%;
+    font-weight: 100;
+}
+
+.cont .company ul li{
+    font-weight: 100;
+}
+
+
+@media (max-width:1800px){
+    .footer{
+        justify-content: space-around;
+        height: auto;
+        gap: 4rem;
+        padding: 2rem 1rem;
+        width: 100%;
+    }
+
+    .logo_side{
+        width: 100%;
+    }
+
+    .cont{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+
+@media (max-width:900px){
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        gap: 4rem;
+        padding: 2rem 1rem;
+        width: 100%;
+    }
+
+    .logo_side{
+        width: 100%;
+    }
+
+    .cont{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}

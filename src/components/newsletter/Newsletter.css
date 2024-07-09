@@ -1,0 +1,168 @@
+.news_letter{
+    height: 355px;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.news_letter img{
+    width: 355px;
+    height: 355px;
+    position: absolute;
+    right: 0;
+}
+
+
+.news_left{
+    position: absolute;
+    left: 21rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.news_left h1{
+    font-size: 40px;
+    width: 700px;
+}
+
+.news_left p{
+    font-size: 28px;
+    color: var(--text-color);
+    opacity: 80%;
+    width: 704px;
+    font-weight: 400;
+}
+
+form.newsletterform {
+    width: 469px;
+    position: relative;
+}
+
+form.newsletterform input{
+    position: relative;
+    padding: 1rem;
+    border-radius: 40px;
+    background: transparent;
+    border: 1px solid var(--text-color);
+    width: 469px;
+}
+
+form.newsletterform button{
+    position: absolute;
+    background: var(--btn-color);
+    padding: 1rem;
+    border-radius: 40px;
+    width: 106px;
+    color: var(--white-color);
+    right: 0rem;
+    bottom: 0;
+    top: 0;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:1800px){
+    .news_left{
+        left: 1rem;
+    }
+
+    .news_left h1{
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .news_left p{
+        font-size: 18px;
+        color: var(--text-color);
+        opacity: 80%;
+        width: 100%;
+        font-weight: 400;
+    }
+    
+    form.newsletterform {
+        width: 100%;
+        position: relative;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 900px){
+    .news_letter{
+        height: 176px;
+        gap: 1rem;
+    }
+
+    .news_left{
+        position: absolute;
+        left: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 50%;
+    }
+
+    .news_left h1{
+        font-size: 14px;
+        width: 100%;
+        font-weight: 700;
+    }
+
+
+    .news_left p{
+        font-size: 12px;
+        width: 100%;
+        font-weight: 400;
+        opacity: 60%;
+    }
+
+    form.newsletterform {
+        width: 100%;
+        position: relative;
+    }
+    
+    form.newsletterform input{
+        position: relative;
+        padding: .6rem;
+        border-radius: 40px;
+        background: transparent;
+        border: 1px solid var(--text-color);
+        width: 70%;
+        font-size: 8px;
+    }
+    
+    form.newsletterform button{
+        position: absolute;
+        background: var(--btn-color);
+        padding: .6rem;
+        border-radius: 40px;
+        width: 65px;
+        color: var(--white-color);
+        left: 55%;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        font-size: 16px;
+        font-weight: 400;
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+    .news_letter img{
+        width: 162px;
+        height: 175px;
+    }
+
+}
